@@ -1,44 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.10.14 on darwin)" generated="2024-05-24T14:26:11.925984" rpa="false" schemaversion="5">
-<suite id="s1" name="Test Cfes Formsg" source="/Users/ZhaoWei/Ngee Ann SQA Tut/RPA/robotframework-mfa/Activity 10A - Group/SZE/test_cfes_formsg.robot">
-<test id="s1-t1" name="Submit CFES Form" line="7">
+<robot generator="Robot 7.0 (Python 3.10.14 on darwin)" generated="2024-05-24T14:51:07.202895" rpa="false" schemaversion="5">
+<suite id="s1" name="SZE assignment" source="/Users/ZhaoWei/Ngee Ann SQA Tut/RPA/robotframework-mfa/Activity 10A - Group/SZE/SZE_assignment.robot">
+<test id="s1-t1" name="Simple Launch and fill" line="10">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-24T14:26:12.055604" level="INFO">Opening browser 'chrome' to base url 'https://form.gov.sg/646c01f16e255a00117d65d2'.</msg>
-<arg>https://form.gov.sg/646c01f16e255a00117d65d2</arg>
+<msg time="2024-05-24T14:51:07.404871" level="INFO">Opening browser 'chrome' to base url 'https://form.gov.sg/646c01f16e255a00117d65d2'.</msg>
+<arg>${form_URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-24T14:26:12.055493" elapsed="4.938489"/>
+<status status="PASS" start="2024-05-24T14:51:07.404697" elapsed="4.382613"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:.chakra-form-control:nth-child(2) .chakra-radio:nth-child(3) &gt; .chakra-radio__control</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-24T14:51:11.788241" elapsed="0.042504"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-24T14:26:16.996523" level="INFO">Clicking element 'id:632824a767747a0011f4468d'.</msg>
-<arg>id:632824a767747a0011f4468d</arg>
+<msg time="2024-05-24T14:51:11.831448" level="INFO">Clicking element 'css:.chakra-form-control:nth-child(2) .chakra-radio:nth-child(3) &gt; .chakra-radio__control'.</msg>
+<arg>css:.chakra-form-control:nth-child(2) .chakra-radio:nth-child(3) &gt; .chakra-radio__control</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-24T14:26:16.995837" elapsed="0.058009"/>
+<status status="PASS" start="2024-05-24T14:51:11.831260" elapsed="0.050031"/>
 </kw>
-<kw name="Pause Exeuction">
-<msg time="2024-05-24T14:26:17.059603" level="FAIL">No keyword with name 'Pause Exeuction' found.</msg>
-<status status="FAIL" start="2024-05-24T14:26:17.059380" elapsed="0.000649">No keyword with name 'Pause Exeuction' found.</status>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-24T14:51:12.332766" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-24T14:51:11.881496" elapsed="0.451356"/>
 </kw>
-<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-24T14:26:17.065562" elapsed="0.144458"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-24T14:51:12.333157" level="INFO">Typing text 'text' into text field 'id:632824a767747a0011f4468d'.</msg>
+<arg>id:632824a767747a0011f4468d</arg>
+<arg>text</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T14:51:12.333018" elapsed="0.237152"/>
 </kw>
-<doc>Launch Yahoo and search for Python</doc>
-<tag>Regression</tag>
-<status status="FAIL" start="2024-05-24T14:26:12.054935" elapsed="5.155242">No keyword with name 'Pause Exeuction' found.</status>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-24T14:51:12.570566" level="INFO">Clicking element 'css:.chakra-form-control:nth-child(4) .chakra-radio:nth-child(1) &gt; .chakra-radio__control'.</msg>
+<arg>css:.chakra-form-control:nth-child(4) .chakra-radio:nth-child(1) &gt; .chakra-radio__control</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T14:51:12.570395" elapsed="0.042924"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-24T14:51:12.613693" level="INFO">Typing text 'text' into text field 'id:632824c3c83c0c0011792d1f'.</msg>
+<arg>id:632824c3c83c0c0011792d1f</arg>
+<arg>text</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T14:51:12.613519" elapsed="0.080505"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-24T14:51:12.694382" level="INFO">Typing text '987' into text field 'id:632824ce8bdc68001194ada8'.</msg>
+<arg>id:632824ce8bdc68001194ada8</arg>
+<arg>987</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T14:51:12.694229" elapsed="0.093850"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-24T14:51:12.789369" level="INFO">Typing text '987@hotmail.com' into text field 'id:632824d6c83c0c0011792f57'.</msg>
+<arg>id:632824d6c83c0c0011792f57</arg>
+<arg>987@hotmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T14:51:12.788769" elapsed="0.094559"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-24T14:51:12.883668" level="INFO">Typing text '987.co' into text field 'id:632824e18bdc68001194af71'.</msg>
+<arg>id:632824e18bdc68001194af71</arg>
+<arg>987.co</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T14:51:12.883535" elapsed="0.087599"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-24T14:51:13.154146" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-24T14:51:12.971460" elapsed="0.182805"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-24T14:51:13.154723" level="INFO">Clicking element 'css:.css-1szjd8b'.</msg>
+<arg>css:.css-1szjd8b</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T14:51:13.154514" elapsed="0.061975"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-24T14:51:18.218468" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-24T14:51:13.216705" elapsed="5.002565"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-05-24T14:51:18.241702" level="INFO">Current page contains text 'Thank you'.</msg>
+<arg>Thank you</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-05-24T14:51:18.220230" elapsed="0.021573"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-24T14:51:18.390966" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-24T14:51:18.242103" elapsed="0.148938"/>
+</kw>
+<status status="PASS" start="2024-05-24T14:51:07.404057" elapsed="10.987166"/>
 </test>
-<doc>This is a documentation of the automated testcase</doc>
-<status status="FAIL" start="2024-05-24T14:26:11.927047" elapsed="5.283541"/>
+<doc>This is the documentation of Form.gov test site.</doc>
+<status status="PASS" start="2024-05-24T14:51:07.204083" elapsed="11.187569"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">Regression</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Test Cfes Formsg">Test Cfes Formsg</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="SZE assignment">SZE assignment</stat>
 </suite>
 </statistics>
 <errors>
