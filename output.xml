@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.14 on darwin)" generated="2024-05-24T14:26:11.925984" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Cfes Formsg" source="/Users/ZhaoWei/Ngee Ann SQA Tut/RPA/robotframework-mfa/Activity 10A - Group/SZE/test_cfes_formsg.robot">
+<test id="s1-t1" name="Submit CFES Form" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-24T14:26:12.055604" level="INFO">Opening browser 'chrome' to base url 'https://form.gov.sg/646c01f16e255a00117d65d2'.</msg>
+<arg>https://form.gov.sg/646c01f16e255a00117d65d2</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-24T14:26:12.055493" elapsed="4.938489"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-24T14:26:16.996523" level="INFO">Clicking element 'id:632824a767747a0011f4468d'.</msg>
+<arg>id:632824a767747a0011f4468d</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T14:26:16.995837" elapsed="0.058009"/>
+</kw>
+<kw name="Pause Exeuction">
+<msg time="2024-05-24T14:26:17.059603" level="FAIL">No keyword with name 'Pause Exeuction' found.</msg>
+<status status="FAIL" start="2024-05-24T14:26:17.059380" elapsed="0.000649">No keyword with name 'Pause Exeuction' found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-24T14:26:17.065562" elapsed="0.144458"/>
+</kw>
+<doc>Launch Yahoo and search for Python</doc>
+<tag>Regression</tag>
+<status status="FAIL" start="2024-05-24T14:26:12.054935" elapsed="5.155242">No keyword with name 'Pause Exeuction' found.</status>
+</test>
+<doc>This is a documentation of the automated testcase</doc>
+<status status="FAIL" start="2024-05-24T14:26:11.927047" elapsed="5.283541"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Regression</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test Cfes Formsg">Test Cfes Formsg</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
